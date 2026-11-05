@@ -5511,3 +5511,290 @@ html {
   /* Intentionally keeping white/light theme for professional insurance brand identity */
   /* TATA AIA corporate brand requires white surfaces — no dark mode override applied */
 }
+
+/* ==========================================================================
+   ENHANCED ADMIN DASHBOARD STYLES
+   ========================================================================== */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.dashboard-title-row {
+  margin-bottom: 24px;
+}
+
+.user-email-badge {
+  background: var(--bg-ice);
+  color: var(--tata-blue);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #d0e0f0;
+}
+
+.metric-grid-pro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.metric-card-pro {
+  background: #ffffff;
+  border: 1.5px solid var(--border-line);
+  border-radius: 14px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.metric-card-pro:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-today {
+  border-color: #a7f3d0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.metric-icon-pro {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.metric-icon-pro.icon-blue { background: #eff6ff; color: var(--tata-royal); }
+.metric-icon-pro.icon-emerald { background: #ecfdf5; color: var(--emerald); }
+.metric-icon-pro.icon-red { background: var(--aia-red-soft); color: var(--aia-red); }
+
+.metric-label-pro {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.metric-val-pro {
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--tata-blue);
+  line-height: 1;
+}
+
+/* Filter Bar */
+.admin-filter-bar {
+  background: #ffffff;
+  border: 1.5px solid var(--border-line);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.search-input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-line);
+  padding: 0 14px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 260px;
+  height: 42px;
+}
+
+.admin-search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+}
+
+.date-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-line);
+  padding: 0 12px;
+  border-radius: 8px;
+  height: 42px;
+}
+
+.admin-date-input {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+}
+
+.date-sep {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.btn-reset-filters {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-line);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-reset-filters:hover {
+  background: #e2e8f0;
+  color: var(--text-main);
+}
+
+/* Pro Table */
+.table-wrap-pro {
+  background: #ffffff;
+  border: 1.5px solid var(--border-line);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-table th {
+  background: #f8fafc;
+  padding: 16px 20px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  border-bottom: 1.5px solid var(--border-line);
+}
+
+.admin-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-line);
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.admin-table tr:hover {
+  background: #fbfcfe;
+}
+
+.customer-name-text {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--tata-blue);
+}
+
+.phone-click-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--tata-royal);
+  font-weight: 700;
+  background: #eff6ff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.phone-click-link:hover {
+  background: #dbeafe;
+  color: var(--tata-blue);
+}
+
+.badge-interest {
+  background: var(--bg-ice);
+  color: var(--tata-blue);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid #d0e0f0;
+}
+
+.status-pill-pro {
+  background: #ecfdf5;
+  color: var(--emerald);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 11px;
+  border: 1px solid #a7f3d0;
+}
+
+.date-time-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-time-cell span {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.date-time-cell small {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.btn-delete-lead {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btn-delete-lead:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.empty-state-pro {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
