@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mohamed Anas S — Finance Advisor Landing Website
 
 A responsive Next.js starter with a public landing page, consent-based customer enquiry form, Supabase storage, and a private admin lead dashboard.
@@ -39,3 +40,6 @@ Open http://localhost:3000.
 
 ## 6. Notes
 The enquiry form and dashboard require Supabase configuration before they can work. The project intentionally does not include fabricated customer records or policy-return claims.
+=======
+# anas-finance-advisor
+>>>>>>> b535cd31c1b9aef6ad2f4f44b041cdc0878dad4e
