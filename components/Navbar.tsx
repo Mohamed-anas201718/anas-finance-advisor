@@ -57,9 +57,8 @@ export default function Navbar() {
           <nav className="desktop-nav">
             <a href="#solutions" className="nav-link">Our Solutions</a>
             <a href="#why-tata" className="nav-link">Why TATA AIA</a>
-            {/* <a href="#calculator" className="nav-link">Plan Calculator</a> */}
             <a href="#about" className="nav-link">Meet Your Advisor</a>
-            {/* <a href="#faq" className="nav-link">FAQs</a> */}
+            <a href="#contact" className="nav-link">Contact</a>
           </nav>
 
           {/* Action CTAs */}
@@ -88,9 +87,7 @@ export default function Navbar() {
             <div className="mobile-nav-links">
               <a href="#solutions" onClick={() => setMobileMenuOpen(false)}>Our Solutions</a>
               <a href="#why-tata" onClick={() => setMobileMenuOpen(false)}>Why TATA AIA</a>
-              {/* <a href="#calculator" onClick={() => setMobileMenuOpen(false)}>Plan Calculator</a> */}
-              <a href="#about" onClick={() => setMobileMenuOpen(false)}>Meet Your Advisor</a>
-              {/* <a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQs</a> */}
+              <a href="#about" onClick={() => setMobileMenuOpen(false)}>Meet Mohamed Anas S</a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mobile-cta-btn">
                 Request Free Callback
               </a>
@@ -106,4 +103,3 @@ export default function Navbar() {
     </>
   );
 }
-
